@@ -1,9 +1,36 @@
 body
 {
     background: #36393e;
+    margin: 0;
+    overflow: hidden;
 }
 
 .curved
 {
     background: #7289da;
+    color: #fff;
+    text-align: center;
+}
+
+.curved h1
+{
+    font-size: 6rem;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 5rem 0 5rem;
+}
+
+.curved p
+{
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.curved svg
+{
+    display: block;
+}
+
+.curved-upper svg
+{
+    display: block;
 }
