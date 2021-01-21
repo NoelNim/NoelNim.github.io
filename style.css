@@ -1,6 +1,9 @@
-h1 
+body
 {
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    padding: 50px 0;
+    background-color: #36393e;
+}
+
+.curved
+{
+    background-color: #7289da;
 }
