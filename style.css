@@ -2,7 +2,7 @@ body
 {
     background: #36393e;
     margin: 0;
-    overflow: hidden;
+    overflow: scroll
 }
 
 .curved
