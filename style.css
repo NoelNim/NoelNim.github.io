@@ -34,3 +34,11 @@ body
 {
     display: block;
 }
+
+img
+{
+    width: 50%;
+    height: 50%;
+    margin-left: 10%;
+    border-radius: 35px;
+}
