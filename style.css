@@ -23,6 +23,8 @@ body
 {
     font-size: 1rem;
     font-family: 'Open Sans', sans-serif;
+    width: 90%;
+    margin: 2rem 5rem 2rem 4rem;
 }
 
 .curved svg
