@@ -64,3 +64,17 @@ img
     color: white;
     font-size: 28px;
 }
+
+.example1
+{
+    margin-top: 5%;
+    width: 75%;
+    height: 75%;
+    display: flex;
+}
+
+.et1
+{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
