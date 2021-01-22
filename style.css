@@ -56,13 +56,14 @@ img
     color: white;
     margin-left: 2%;
     margin-top: 1%;
-    font-size: 40px;
+    font-size: 200%;
 }
 
 .yolo2
 {
     color: white;
-    font-size: 28px;
+    font-size: 65%;
+    margin-right: 5%;
 }
 
 .example1
@@ -82,4 +83,141 @@ img
     font-family: 'Open Sans', sans-serif;
     margin-left: 10%;
     margin-top: 6%;
+    margin-right: 10%;
+}
+
+.button
+{
+    margin-left: 50%;
+    background-color: #7289da;
+    border: none;
+    width: 100px;
+    height: 50px;
+    margin-bottom: 5%;
+    border-radius: 35px;
+}
+
+.button a
+{
+    text-decoration: none;
+}
+
+.buttontext
+{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.buttonbackground
+{
+    margin-bottom: -8%;
+}
+
+.nodebutton
+{
+    background-color: #74b569;
+    border: none;
+    width: 100px;
+    height: 50px;
+    margin-bottom: 5%;
+    border-radius: 35px;
+    margin-top: 5%;
+    margin-left: 37%;
+}
+
+.nodebutton a
+{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+.usernimstad
+{
+    display: flex;
+}
+
+.nimstad
+{
+    width: 50px;
+    height: 50px;
+    margin-left: 42.5%;
+}
+
+.nimstadtext
+{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 20px;
+    margin-top: 0.6%;
+    margin-left: 1%;
+}
+
+.nimstadtag
+{
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(175, 175, 175);
+    font-size: 15px;
+    margin-top: 0.85%;
+}
+.usersuj
+{
+    display: flex;
+}
+
+.suj
+{
+    width: 50px;
+    height: 50px;
+    margin-left: 42.5%;
+    margin-top: 1%;
+}
+
+.sujtext
+{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 20px;
+    margin-top: 1.6%;
+    margin-left: 1%;
+}
+
+.sujtag
+{
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(175, 175, 175);
+    font-size: 15px;
+    margin-top: 1.9%;
+}
+
+.userFroggers
+{
+    display: flex;
+}
+
+.Froggers
+{
+    width: 50px;
+    height: 50px;
+    margin-left: 42.5%;
+    margin-top: 1%;
+}
+
+.Froggerstext
+{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 20px;
+    margin-top: 1.7%;
+    margin-left: 1%;
+}
+
+.Froggerstag
+{
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(175, 175, 175);
+    font-size: 15px;
+    margin-top: 2%;
 }
