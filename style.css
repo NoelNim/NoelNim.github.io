@@ -41,7 +41,6 @@ img
 {
     width: 50%;
     height: 50%;
-    margin-left: 10%;
     border-radius: 35px;
 }
 
@@ -49,6 +48,7 @@ img
 {
     display: flex;
     font-family: 'Open Sans', sans-serif;
+    margin-left: 3%;
 }
 
 .yolo
@@ -66,24 +66,29 @@ img
     margin-right: 5%;
 }
 
-.example1
+.image1
 {
-    margin-top: 5%;
-    width: 75%;
-    height: 75%;
+    width: 50%;
+    height: 50%;
     display: flex;
     float: right;
-    margin-left: -100px;
-    display: flex;
 }
 
 .et1
 {
     color: white;
     font-family: 'Open Sans', sans-serif;
-    margin-left: 10%;
     margin-top: 6%;
-    margin-right: 10%;
+    margin-left: 5%;
+    text-align: left;
+    font-size: 200%;
+}
+
+.et1_1
+{
+    color: white;
+    font-size: 65%;
+    margin-right: 5%;
 }
 
 .button
