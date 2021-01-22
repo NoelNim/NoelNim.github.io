@@ -45,7 +45,22 @@ img
     border-radius: 35px;
 }
 
+.nodejslogo
+{
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .yolo
 {
-    margin: 10rem 5rem 2rem 4rem;
+    color: white;
+    margin-left: 2%;
+    margin-top: 1%;
+    font-size: 40px;
+}
+
+.yolo2
+{
+    color: white;
+    font-size: 28px;
 }
