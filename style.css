@@ -169,6 +169,7 @@ img
     font-size: 15px;
     margin-top: 0.85%;
 }
+
 .usersuj
 {
     display: flex;
@@ -227,4 +228,34 @@ img
     color: rgb(175, 175, 175);
     font-size: 15px;
     margin-top: 2%;
+}
+
+.userhampu
+{
+    display: flex;
+}
+
+.hampu
+{
+    width: 50px;
+    height: 50px;
+    margin-left: 42.5%;
+    margin-top: 1%;
+}
+
+.hamputext
+{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 20px;
+    margin-top: 1.6%;
+    margin-left: 1%;
+}
+
+.hamputag
+{
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(175, 175, 175);
+    font-size: 15px;
+    margin-top: 1.9%;
 }
