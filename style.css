@@ -72,6 +72,7 @@ img
     height: 50%;
     display: flex;
     float: right;
+    margin-right: 3%;
 }
 
 .et1
@@ -79,9 +80,10 @@ img
     color: white;
     font-family: 'Open Sans', sans-serif;
     margin-top: 6%;
-    margin-left: 5%;
+    margin-left: 10%;
     text-align: left;
     font-size: 200%;
+    margin-right: 5%;
 }
 
 .et1_1
@@ -116,7 +118,7 @@ img
 
 .buttonbackground
 {
-    margin-bottom: -8%;
+    margin-bottom: -9%;
 }
 
 .nodebutton
