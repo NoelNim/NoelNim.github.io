@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <script>
+            window.onload = function()
+            {
+                var titles = ["small cave", "ooga booga", "hello there", "beautiful day", "food", "yes", "perhaps", "i think not!", "true title", "maybe", "what if?", "42", "ultimate title of doom", "mega title", "pog this title", "totally gmail", "microsoft word", "power point", "$DOGE to the moon!", "$DOGE", "undefined"]
+                var title = titles[Math.floor(Math.random() * titles.length)]
+                document.title = title;
+            }
+        </script>
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+        <link rel="icon" href="img/favicon.png">
+    </head>
     <body>
-        <h1>hellows there hooman!</h1>
+        <div class="container">
+            <div class="titleText">hello there</div>
+        </div>
     </body>
 </html>
