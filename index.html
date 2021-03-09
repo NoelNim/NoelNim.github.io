@@ -4,7 +4,7 @@
         <script>
             window.onload = function()
             {
-                var titles = ["small cave", "ooga booga", "hello there", "beautiful day", "food", "yes", "perhaps", "i think not!", "true title", "maybe", "what if?", "42", "ultimate title of doom", "mega title", "pog this title", "totally gmail", "microsoft word", "power point", "$DOGE to the moon!", "$DOGE", "undefined"]
+                var titles = ["small cave", "ooga booga", "hello there", "beautiful day", "food", "yes", "perhaps", "i think not!", "true title", "maybe", "what if?", "42", "ultimate title of doom", "mega title", "pog this title", "totally gmail", "microsoft word", "power point", "$DOGE to the moon!", "$DOGE", "undefined", "noogle"]
                 var title = titles[Math.floor(Math.random() * titles.length)]
                 document.title = title;
             }
@@ -14,7 +14,36 @@
         <link rel="stylesheet" href="main.css">
         <link rel="icon" href="img/favicon.png">
         <meta name="description" content="one or two, thats the  question">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
     </head>
     <body>
+        <div id="navbar">
+            <a href="#" id="about">What</a>
+            <a href="#" id="store">Money</a>
+            <a href="#" id="gmail">Mail</a>
+            <a href="#" id="images">Image</a>
+            <a href="#" id="menu"><img src="img/sansIcon.png" height="30px" width="30px"></a>
+            <a href="#" id="sign-in">Sign in</a>
+        </div>
+        <div id="main">
+            <a href="#" id="logo"><img src="img/Noogle.png" width="270" height="50"></a>
+            <input type="text" id="search">
+            <div id="flexbox">
+                <button id="google-search-btn">contact</button>
+                <button id="random-search-btn">who are we?</button>
+            </div>
+            <p id="google-text">Datsmin offered in: <a href="#" id="swedishing">Swedishing</a></p>
+        </div>
+        <div id="footer">
+            <a href="#" id="advertising">Ads?</a>
+            <a href="#" id="bussines">Busy ness</a>
+            <a href="#" id="hsw">How we work</a>
+            <a href="#" id="privacy">Am i safe?</a>
+            <a href="#" id="terms">Terms</a>
+            <a href="#" id="settings">Configuration</a>
+            <a href="#" id="leaf"><img src="img/leaf.png" height="15px" width="15px" id="leafimg">Carbon naturel sinse 14 years</a>
+        </div>
     </body>
 </html>
