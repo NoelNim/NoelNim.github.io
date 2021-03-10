@@ -47,6 +47,24 @@ html
     margin-top: 4%;
     display: block;
     color: #535353;
+    height: 800px;
+}
+
+#joshtexttwo
+{
+    font-size: 10px;
+    bottom: 0;
+    position: fixed;
+    padding-bottom: 55px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+a
+{
+    text-decoration: none;
+    color: #fcba03;
 }
 
 #bottom
