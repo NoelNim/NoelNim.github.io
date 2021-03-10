@@ -86,9 +86,14 @@ a, p
     align-self: end;
 }
 
-#search
+#searchBar
 {
     grid-area: search;
+    align-self: center;
+}
+
+#search
+{
     height: 30px;
     width: 100%;
     align-self: center;
