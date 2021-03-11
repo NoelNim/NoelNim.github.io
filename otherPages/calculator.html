@@ -7,43 +7,43 @@
         <script>
             window.onload = function()
             {
-                var colors =  
-                [
-                    '#4285f4',
-                    '#ea4335',
-                    '#fbbc05',
-                    '#34a853'
-                ];
+                function randomBackgroundColor()
+                {
+                    var colors =  
+                    [
+                        '#4285f4',
+                        '#ea4335',
+                        '#fbbc05',
+                        '#34a853'
+                    ];
 
-                var random_color = colors[Math.floor(Math.random() * colors.length)];
+                    var random_color = colors[Math.floor(Math.random() * colors.length)];
+                    return random_color;
+                }
 
                 var x = document.getElementById('clear');
-                x.style.backgroundColor = random_color;
-                x.style.color = 'white';
-
-                var random_color2 = colors[Math.floor(Math.random() * colors.length)];
+                x.style.backgroundColor = randomBackgroundColor();
 
                 var x = document.getElementById('backspace');
-                x.style.backgroundColor = random_color2;
-                x.style.color = 'white';
-
-                var random_color3 = colors[Math.floor(Math.random() * colors.length)];
+                x.style.backgroundColor = randomBackgroundColor();
 
                 var x = document.getElementById('%');
-                x.style.backgroundColor = random_color3;
-                x.style.color = 'white';
-
-                var random_color4 = colors[Math.floor(Math.random() * colors.length)];
+                x.style.backgroundColor = randomBackgroundColor();
 
                 var x = document.getElementById('/');
-                x.style.backgroundColor = random_color4;
-                x.style.color = 'white';
-
-                var random_color5 = colors[Math.floor(Math.random() * colors.length)];
+                x.style.backgroundColor = randomBackgroundColor();
 
                 var x = document.getElementById('*');
-                x.style.backgroundColor = random_color5;
-                x.style.color = 'white';
+                x.style.backgroundColor = randomBackgroundColor();
+
+                var x = document.getElementById('-');
+                x.style.backgroundColor = randomBackgroundColor();
+
+                var x = document.getElementById('+');
+                x.style.backgroundColor = randomBackgroundColor();
+
+                var x = document.getElementById('=');
+                x.style.backgroundColor = randomBackgroundColor();
             }
         </script>
     </head>
