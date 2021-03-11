@@ -1,3 +1,8 @@
+html
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 #container
 {
     width: 1000px;
@@ -16,4 +21,70 @@
     background: #F1F3F4;
     box-shadow:  14px 14px 39px #d2d3d4,
                  -14px -14px 39px #ffffff;
+}
+
+#bottom
+{
+    position: fixed;
+    bottom: 0;
+    padding-left: 0px;
+    padding-bottom: 10px;
+}
+
+#result
+{
+    height: 120px;
+}
+
+#keyboard
+{
+    height: 400px;
+}
+
+#history
+{
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    color: #535353;
+}
+
+#output
+{
+    text-align: right;
+    color: #202124;
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 18px;
+}
+
+.operator, .number, .empty
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 28px;
+    border: none;
+    background: #F1F3F4;
+    box-shadow: 5px 5px 10px #d2d3d4,
+                -5px -5px 10px #ffffff;    
+    margin: 15px;
+    float: left;
+    cursor: pointer;
+}
+
+
+.operator:active, .number:active
+{
+    border-radius: 28px;
+    background: #F1F3F4;
+    box-shadow: inset 5px 5px 10px #d2d3d4,
+                inset -5px -5px 10px #ffffff;
+    color: #535353;
+}
+
+.empty
+{
+    box-shadow: none;
 }
