@@ -66,13 +66,10 @@ html
     height: 50px;
     border-radius: 28px;
     border: none;
-    background: #F1F3F4;
-    box-shadow: 5px 5px 10px #d2d3d4,
-                -5px -5px 10px #ffffff;    
+    background: rgb(227, 229, 231);
     margin: 15px;
     float: left;
     cursor: pointer;
-    transition: 5s ease-in-out;
 }
 
 
@@ -80,8 +77,6 @@ html
 {
     border-radius: 28px;
     background: #F1F3F4;
-    box-shadow: inset 5px 5px 10px #d2d3d4,
-                inset -5px -5px 10px #ffffff;
     color: #535353;
 }
 
