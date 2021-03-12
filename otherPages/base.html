@@ -12,16 +12,17 @@
 
                 let encode = document.getElementById('encode');
                 let decode = document.getElementById('decode');
-                let output = document.getElementById('output');
+                let input = document.getElementById('input');
+                let output = document.getElementById('output')
 
                 encode.onclick = function() 
                 {
-                    output.value = btoa(output.value);
+                    output.innerHTML = btoa(input.value);
                 };
 
                 decode.onclick = function() 
                 {
-                    output.value = atob(output.value);
+                    output.innerHTML = atob(input.value);
                 };
             }
         </script>
@@ -32,7 +33,8 @@
             <button id="encode" type="submit">Encode</button>
             <button id="decode" type="submit">Decode</button>
         </div>
-        <input id="output">
+        <input id="input">
+        <div id="output">sample</div>
         <div id="bottom">
             <a href="../index.html"><img src="../img/button.png" width="100"></a>
         </div>
