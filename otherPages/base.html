@@ -11,11 +11,17 @@
                 console.log(supersecretb64);
 
                 let encode = document.getElementById('encode');
+                let decode = document.getElementById('decode');
                 let output = document.getElementById('output');
 
                 encode.onclick = function() 
                 {
                     output.value = btoa(output.value);
+                };
+
+                decode.onclick = function() 
+                {
+                    output.value = atob(output.value);
                 };
             }
         </script>
