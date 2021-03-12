@@ -1,0 +1,7 @@
+#bottom
+{
+    position: fixed;
+    bottom: 0;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
