@@ -3,10 +3,30 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="base.css">
-        <link rel="script" href="base.js">
+        <script>
+            window.onload = function()
+            {
+                var supersecretstring = "you are a sneaky one, arent you?"
+                var supersecretb64 = btoa(supersecretstring);
+                console.log(supersecretb64);
+
+                let encode = document.getElementById('encode');
+                let output = document.getElementById('output');
+
+                encode.onclick = function() 
+                {
+                    output.value = btoa(output.value);
+                };
+            }
+        </script>
         <title>Base 64</title>
     </head>
     <body>
+        <div>
+            <button id="encode" type="submit">Encode</button>
+            <button id="decode" type="submit">Decode</button>
+        </div>
+        <input id="output">
         <div id="bottom">
             <a href="../index.html"><img src="../img/button.png" width="100"></a>
         </div>
