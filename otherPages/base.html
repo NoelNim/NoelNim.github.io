@@ -12,29 +12,41 @@
 
                 let encode = document.getElementById('encode');
                 let decode = document.getElementById('decode');
-                let input = document.getElementById('input');
-                let output = document.getElementById('output')
+                let inputEncode = document.getElementById('inputEncode');
+                let outputEncode = document.getElementById('outputEncode');
+                let inputDecode = document.getElementById('inputDecode');
+                let outputDecode = document.getElementById('outputDecode');
 
                 encode.onclick = function() 
                 {
-                    output.innerHTML = btoa(input.value);
+                    outputEncode.innerHTML = btoa(inputEncode.value);
                 };
 
                 decode.onclick = function() 
                 {
-                    output.innerHTML = atob(input.value);
+                    outputDecode.innerHTML = atob(inputDecode.value);
                 };
             }
         </script>
         <title>Base 64</title>
     </head>
     <body>
-        <div>
-            <button id="encode" type="submit">Encode</button>
-            <button id="decode" type="submit">Decode</button>
+        <div id="base64">
+            <div id="encodediv">
+                <div>
+                    <button id="encode" type="submit">Encode</button>
+                </div>
+                <input id="inputEncode" placeholder="encode message">
+                <div id="outputEncode">Encoded String</div>
+            </div>
+            <div id="decodediv">
+                <div id="decodebuttondiv">
+                    <button id="decode" type="submit">Decode</button>
+                </div>
+                <input id="inputDecode" placeholder="decode message">
+                <div id="outputDecode">Decoded String</div>
+            </div>
         </div>
-        <input id="input">
-        <div id="output">sample</div>
         <div id="bottom">
             <a href="../index.html"><img src="../img/button.png" width="100"></a>
         </div>
