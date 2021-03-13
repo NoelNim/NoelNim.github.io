@@ -16,7 +16,6 @@
                 let outputEncode = document.getElementById('outputEncode');
                 let inputDecode = document.getElementById('inputDecode');
                 let outputDecode = document.getElementById('outputDecode');
-                const inputDecodeCopy = document.getElementById('inputDecode');
 
                 encode.onclick = function() 
                 {
@@ -27,11 +26,6 @@
                 {
                     outputDecode.innerHTML = atob(inputDecode.value);
                 };
-
-                inputDecode.onclick = function() 
-                {
-                    inputDecodeCopy.select();
-                }
             }
         </script>
         <title>Base 64</title>
