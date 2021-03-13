@@ -49,6 +49,17 @@
                         outputDecode.innerHTML = atob(inputDecode.value);
                     }
                 };
+
+                const copyButton = document.getElementById('copy2');
+
+                copyButton.addEventListener("click", copyText);
+
+                function copyText()
+                {
+                    outputDecode.innerHTML.select();
+                    document.execCommand("copy");
+                    copyButton.innerHTML = "done";
+                }
             }
         </script>
         <title>Base 64</title>
@@ -72,7 +83,7 @@
                         <button id="decode" type="submit">Decode</button>
                     </div>
                     <div id="outputDecode">Decoded string</div>
-                    <button id="copy2">Copy <i class="fas fa-copy"></i></button>
+                    <button id="copy2" onclick="copyFunction2()">Copy <i class="fas fa-copy"></i></button>
             </div>
         </div>
         <div id="bottom">
