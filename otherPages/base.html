@@ -16,6 +16,7 @@
                 let outputEncode = document.getElementById('outputEncode');
                 let inputDecode = document.getElementById('inputDecode');
                 let outputDecode = document.getElementById('outputDecode');
+                const inputDecodeCopy = document.getElementById('inputDecode');
 
                 encode.onclick = function() 
                 {
@@ -26,25 +27,26 @@
                 {
                     outputDecode.innerHTML = atob(inputDecode.value);
                 };
+
+                inputDecode.onclick = function() 
+                {
+                    inputDecodeCopy.select();
+                }
             }
         </script>
         <title>Base 64</title>
     </head>
     <body>
         <div id="base64">
-            <div id="encodediv">
+                <input id="inputEncode" placeholder="encode message">
                 <div>
                     <button id="encode" type="submit">Encode</button>
                 </div>
-                <input id="inputEncode" placeholder="encode message">
-                <div id="outputEncode">Encoded String</div>
-            </div>
-            <div id="decodediv">
+                <div id="outputEncode">click to copy</div>
+                <input id="inputDecode" placeholder="decode message">
                 <div id="decodebuttondiv">
                     <button id="decode" type="submit">Decode</button>
-                </div>
-                <input id="inputDecode" placeholder="decode message">
-                <div id="outputDecode">Decoded String</div>
+                <div id="outputDecode">click to copy</div>
             </div>
         </div>
         <div id="bottom">

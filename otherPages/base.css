@@ -21,8 +21,6 @@ html
 
 #decodediv
 {
-    display: block;
-    float: right;
     max-width: 500px;
     word-wrap: break-word
 }
@@ -34,12 +32,6 @@ html
 
 #outputEncode
 {
-
-}
-
-#outputDecode
-{
-    margin-top: 45px;
     border: 1px solid rgba(0, 0, 0, 0.151);
     border-radius: 30px;
     transition: all 0.2s ease;
@@ -51,6 +43,62 @@ html
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     background-color: white;
+    cursor: copy;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+#outputEncode:focus
+{
+    outline: none;
+}
+
+#outputEncode:hover
+{
+    box-shadow: 1px 1px 5px #c4c4c4;
+}
+
+#inputEncode
+{
+    border: 1px solid rgba(0, 0, 0, 0.151);
+    border-radius: 30px;
+    transition: all 0.2s ease;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+#inputEncode:focus
+{
+    outline: none;
+}
+
+#inputEncode:hover
+{
+    box-shadow: 1px 1px 5px #c4c4c4;
+}
+
+#outputDecode
+{
+    border: 1px solid rgba(0, 0, 0, 0.151);
+    border-radius: 30px;
+    transition: all 0.2s ease;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: white;
+    cursor: copy;
+    -webkit-user-select: none;
+    -moz-user-select: none;
 }
 
 #outputDecode:focus
@@ -65,8 +113,6 @@ html
 
 #decode
 {
-    display: block;
-    float: right;
     height: 20px;
 }
 
@@ -78,8 +124,6 @@ html
 
 #inputDecode
 {
-    display: block;
-    float: right;
     height: 25px;
 }
 
