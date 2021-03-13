@@ -1,6 +1,7 @@
 html
 {
     font-family: Arial, Helvetica, sans-serif;
+    word-wrap: break-word
 }
 
 #bottom
@@ -40,6 +41,7 @@ html
     display: block;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 10px;
 }
 
 #encode:hover
@@ -67,6 +69,7 @@ html
     display: block;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 10px;
 }
 
 #decode:hover
@@ -85,7 +88,7 @@ html
     width: 100px;
     border-radius: 50px;
     color: white;
-    background-color: #4285f4;
+    background-color: #34a853;
     border: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
@@ -94,6 +97,91 @@ html
     display: block;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+#copy1:hover
+{
+    box-shadow: 0px 0px 10px #c4c4c4;
+}
+
+#copy1:active
+{
+    background-color: #fbbc05;
+}
+
+#copy2
+{
+    height: 50px;
+    width: 100px;
+    border-radius: 50px;
+    color: white;
+    background-color: #fbbc05;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#copy2:hover
+{
+    box-shadow: 0px 0px 10px #c4c4c4;
+}
+
+#copy2:active
+{
+    background-color: #ea4335;
+}
+
+#inputDiv
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#inputDivTitle
+{
+    text-align: center;
+    font-size: 30px;
+}
+
+#inputDiv
+{
+    border: 1px solid #c4c4c4;
+    border-radius: 30px;
+    transition: all 0.2s ease;
+}
+
+#decodeDiv
+{
+    border: 1px solid #c4c4c4;
+    border-radius: 30px;
+    transition: all 0.2s ease;
+}
+
+#inputDiv:hover
+{
+    box-shadow: 1px 1px 5px #c4c4c4;
+}
+
+#inputDivTitleDecode
+{
+    text-align: center;
+    font-size: 30px;
+}
+
+#decodeDiv:hover
+{
+    box-shadow: 1px 1px 5px #c4c4c4;
+}
+
+#decodeDivTitleDecode
+{
+    text-align: center;
+    font-size: 30px;
 }
 
 #outputEncode
@@ -112,6 +200,27 @@ html
     min-height: 70px;
     margin-left: 25px;
     margin-right: 25px;
+    overflow-y: scroll;
+    scrollbar-track-color: transparent;
+}
+
+#outputDecode
+{
+    border: 1px solid rgba(0, 0, 0, 0.151);
+    border-radius: 30px;
+    transition: all 0.2s ease;
+    padding: 15px;
+    padding-top: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: white;
+    cursor: copy;
+    height: 70px;
+    min-height: 70px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 40px;
 }
 
 #outputEncode:focus
@@ -176,22 +285,6 @@ html
 #inputDecode:hover
 {
     box-shadow: 1px 1px 5px #c4c4c4;
-}
-
-#outputDecode
-{
-    border: 1px solid rgba(0, 0, 0, 0.151);
-    border-radius: 30px;
-    transition: all 0.2s ease;
-    padding: 15px;
-    padding-top: 10px;
-    box-sizing: border-box;
-    background-color: white;
-    cursor: copy;
-    height: 70px;
-    min-height: 70px;
-    margin-left: 25px;
-    margin-right: 25px;
 }
 
 #outputDecode:focus

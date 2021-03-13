@@ -56,7 +56,8 @@
     </head>
     <body>
         <div id="base64">
-            <div>
+            <div id="inputDiv">
+                <p id="inputDivTitle">Encode</p>
                 <input id="inputEncode" placeholder="encode message">
                 <div>
                     <button id="encode" type="submit">Encode</button>
@@ -64,13 +65,14 @@
                 <div id="outputEncode">Encoded string</div>
                 <button id="copy1">Copy <i class="fas fa-copy"></i></button>
             </div>
-            <div>
+            <div id="decodeDiv">
+                <p id="inputDivTitleDecode">Decode</p>
                     <input id="inputDecode" placeholder="decode message">
                     <div id="decodebuttondiv">
                         <button id="decode" type="submit">Decode</button>
+                    </div>
                     <div id="outputDecode">Decoded string</div>
                     <button id="copy2">Copy <i class="fas fa-copy"></i></button>
-                </div>
             </div>
         </div>
         <div id="bottom">
