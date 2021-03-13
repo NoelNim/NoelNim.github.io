@@ -5,19 +5,19 @@ html
 
 #container
 {
-    width: 1000px;
-    height: 100vh;
-    margin: 20px auto;
+    width: 500px;
+    height: 50vh;
+    margin: 10px auto;
 }
 
 #calculator
 {
-    width: 640px;
-    height: 1040px;
+    width: 320px;
+    height: 520px;
     margin: 0 auto;
-    top: 40px;
+    top: 20px;
     position: relative;
-    border-radius: 56px;
+    border-radius: 28px;
     background: #F1F3F4;
     box-shadow:  14px 14px 39px #d2d3d4,
                  -14px -14px 39px #ffffff;
@@ -27,28 +27,28 @@ html
 {
     position: fixed;
     bottom: 0;
-    padding-left: 18px;
-    padding-bottom: 10px;
+    padding-left: 9px;
+    padding-bottom: 5px;
     left: 0;
 }
 
 #result
 {
-    height: 240px;
+    height: 120px;
 }
 
 #keyboard
 {
-    height: 800px;
+    height: 400px;
 }
 
 #history
 {
     text-align: right;
-    height: 40px;
-    margin: 0 40px;
-    padding-top: 40px;
-    font-size: 30px;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
     color: #535353;
 }
 
@@ -56,22 +56,22 @@ html
 {
     text-align: right;
     color: #202124;
-    height: 120px;
-    margin: 20px 40px;
-    font-size: 36px;
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 18px;
 }
 
 .operator, .number
 {
-    width: 100px;
-    height: 100px;
-    border-radius: 56px;
+    width: 50px;
+    height: 50px;
+    border-radius: 28px;
     border: none;
     background: rgb(227, 229, 231);
-    margin: 30px;
+    margin: 15px;
     float: left;
     cursor: pointer;
-    font-size: 30px;
+    font-size: 15px;
 }
 
 .operator
@@ -82,7 +82,7 @@ html
 
 .operator:active, .number:active
 {
-    border-radius: 56px;
+    border-radius: 28px;
     background: #F1F3F4;
     color: #535353;
 }
@@ -90,11 +90,11 @@ html
 .empty
 {
     box-shadow: none;
-    width: 100px;
-    height: 100px;
-    border-radius: 56px;
+    width: 50px;
+    height: 50px;
+    border-radius: 28px;
     border: none;
     background: transparent;
-    margin: 30px;
+    margin: 15px;
     float: left;
 }
