@@ -44,6 +44,8 @@ html
     cursor: copy;
     height: 70px;
     min-height: 70px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 #outputEncode:focus
@@ -122,6 +124,8 @@ html
     cursor: copy;
     height: 70px;
     min-height: 70px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 #outputDecode:focus
@@ -152,7 +156,6 @@ html
 
 #base64
 {
-    width: 1000px;
     height: 500px;
     display: block;
     margin-left: auto;
