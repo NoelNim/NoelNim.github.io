@@ -67,6 +67,10 @@ html
     padding-bottom: 5px;
     box-sizing: border-box;
     background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
 }
 
 #inputEncode:focus
@@ -75,6 +79,33 @@ html
 }
 
 #inputEncode:hover
+{
+    box-shadow: 1px 1px 5px #c4c4c4;
+}
+
+#inputDecode
+{
+    border: 1px solid rgba(0, 0, 0, 0.151);
+    border-radius: 30px;
+    transition: all 0.2s ease;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+#inputDecode:focus
+{
+    outline: none;
+}
+
+#inputDecode:hover
 {
     box-shadow: 1px 1px 5px #c4c4c4;
 }
