@@ -17,30 +17,60 @@
                 let inputDecode = document.getElementById('inputDecode');
                 let outputDecode = document.getElementById('outputDecode');
 
+                var errorMessage = 
+                [
+                    "not a valid string",
+                    "no string",
+                    "pls enter string",
+                    "i need string",
+                    "string. not. there"
+                ]
+
                 encode.onclick = function() 
                 {
-                    outputEncode.innerHTML = btoa(inputEncode.value);
+                    if(inputEncode.value == "")
+                    {
+                        var randomErrorMessage = errorMessage[Math.floor(Math.random() * errorMessage.length)];
+                        outputEncode.innerHTML = randomErrorMessage;
+                    } else
+                    {
+                        outputEncode.innerHTML = btoa(inputEncode.value);
+                    }
                 };
 
                 decode.onclick = function() 
                 {
-                    outputDecode.innerHTML = atob(inputDecode.value);
+                    if(inputDecode.value == "")
+                    {
+                        var randomErrorMessage = errorMessage[Math.floor(Math.random() * errorMessage.length)];
+                        outputDecode.innerHTML = randomErrorMessage;
+                    } else
+                    {
+                        outputDecode.innerHTML = atob(inputDecode.value);
+                    }
                 };
             }
         </script>
         <title>Base 64</title>
+        <script src="https://kit.fontawesome.com/d378015fe2.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div id="base64">
+            <div>
                 <input id="inputEncode" placeholder="encode message">
                 <div>
                     <button id="encode" type="submit">Encode</button>
                 </div>
-                <div id="outputEncode">click to copy</div>
-                <input id="inputDecode" placeholder="decode message">
-                <div id="decodebuttondiv">
-                    <button id="decode" type="submit">Decode</button>
-                <div id="outputDecode">click to copy</div>
+                <div id="outputEncode">Encoded string</div>
+                <button>Copy <i class="fas fa-copy"></i></button>
+            </div>
+            <div>
+                    <input id="inputDecode" placeholder="decode message">
+                    <div id="decodebuttondiv">
+                        <button id="decode" type="submit">Decode</button>
+                    <div id="outputDecode">Decoded string</div>
+                    <button>Copy <i class="fas fa-copy"></i></button>
+                </div>
             </div>
         </div>
         <div id="bottom">
