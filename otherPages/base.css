@@ -1,7 +1,7 @@
-html
+html, body
 {
     font-family: Arial, Helvetica, sans-serif;
-    word-wrap: break-word
+    word-wrap: break-word;
 }
 
 #bottom
@@ -148,6 +148,7 @@ html
     border: 1px solid #c4c4c4;
     border-radius: 30px;
     transition: all 0.2s ease;
+    overflow: hidden;
 }
 
 #decodeDiv
@@ -156,6 +157,7 @@ html
     border-radius: 30px;
     transition: all 0.2s ease;
     background-color: white;
+    overflow: hidden;
 }
 
 #inputDiv:hover
@@ -196,8 +198,7 @@ html
     min-height: 70px;
     margin-left: 25px;
     margin-right: 25px;
-    overflow-y: scroll;
-    scrollbar-track-color: transparent;
+    overflow: auto;
 }
 
 #outputDecode
@@ -217,6 +218,7 @@ html
     margin-left: 25px;
     margin-right: 25px;
     margin-top: 40px;
+    overflow: auto;
 }
 
 #outputEncode:focus
