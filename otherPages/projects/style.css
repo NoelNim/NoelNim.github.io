@@ -73,3 +73,43 @@ body
     height: 36px;
     background-color: #AAA;
 }
+
+.video-details
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.video-title
+{
+    font-size: 1.05rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    text-decoration: none;
+    color: black;
+}
+
+.video-channel-name
+{
+    margin-bottom: .1rem;
+    text-decoration: none;
+    transition: color 150ms;
+}
+
+.video-channel-name:hover
+{
+    color: #111;
+}
+
+.video-channel-name, .video-metadata
+{
+    color: #555;
+}
+
+.video-section-title
+{
+    grid-column: 1 / -1;
+    margin: -.5rem 0;
+    display: flex;
+    justify-content: space-between;
+}
