@@ -173,7 +173,7 @@ body
 
 .nutubee-logo
 {
-    height: 20px;
+    height: 35px;
 }
 
 .search-bar
@@ -188,7 +188,7 @@ body
     width: 100%;
     font-size: inherit;
     padding: .4em;
-    border: 1px solid #777;
+    border: 1px solid #BABCBE;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-radius: 0;
@@ -199,6 +199,7 @@ body
 .search-input:focus
 {
     outline: none;
+    border: 1px solid #777;
 }
 
 .search-btn
@@ -206,7 +207,7 @@ body
     display: flex;
     align-items: center;
     padding: 0 1.25rem;
-    border: 1px solid #777;
+    border: 1px solid #BABCBE;
     background-color: #F8F8F8;
     border-left: none;
     border-top-left-radius: 0;
@@ -214,4 +215,25 @@ body
     cursor: pointer;
     height: 37px;
     margin-top: 2px;
+    transition: all 150ms;
+    margin-left: 0;
+}
+
+.search-btn:hover
+{
+    background-color: #F0F0F0;
+}
+
+.menu-icons
+{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.menu-channel-icon
+{
+    border-radius: 50%;
+    background-color: #AAA;
 }
