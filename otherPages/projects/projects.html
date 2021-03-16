@@ -5,14 +5,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Projects</title>
+        <script>
+            window.onload = function()
+            {
+                function weeksBetween(d1, d2)
+                {
+                    return Math.round((d2 - d1) / (7 * 24 * 60 * 60 * 1000) - 2);
+                }
+
+                document.getElementById('noogleDate').innerHTML = weeksBetween(new Date(), new Date(2021, 3, 9)) + ' week ago';
+            }
+        </script>
     </head>
     <body>
         <div class="videos">
             <section class="video-section">
                 <article class="video-container">
-                    <a href="#" class="thumbnail">
-                        <img class="thumbnail-image" src="img/logo/Noogle_N.png"/>
+                    <a href="/index.html" class="thumbnail">
+                        <img class="thumbnail-image" src="img/logo/Noogle_N.png?gravity=center"/>
                     </a>
+                    <div class="video-bottom-section">
+                        <a href="../what.html">
+                            <img class="channel-icon" src="img/logo/Noogle_N_Channel.png?gravity=center"/>
+                        </a>
+                        <div class="video-details">
+                            <a href="/index.html" class="video-title">Noogle</a>
+                            <a href="../what.html" class="video-title">Datsmin</a>
+                            <div class="video-metadata">
+                                <span>??? views</span>
+                                •
+                                <span id="noogleDate">null</span>
+                            </div>
+                        </div>
+                    </div>
                 </article>
             </section>
         </div>
