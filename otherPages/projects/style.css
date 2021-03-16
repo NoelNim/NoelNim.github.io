@@ -191,6 +191,14 @@ body
     border: 1px solid #777;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+    border-radius: 0;
+    margin-right: 0;
+    box-shadow: none;
+}
+
+.search-input:focus
+{
+    outline: none;
 }
 
 .search-btn
@@ -204,6 +212,6 @@ body
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     cursor: pointer;
-    height: 38px;
-    margin-top: 1px;
+    height: 37px;
+    margin-top: 2px;
 }
