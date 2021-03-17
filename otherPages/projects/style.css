@@ -195,14 +195,12 @@ body
     border-radius: 0;
     margin-right: 0;
     box-shadow: none;
-    display: none;
 }
 
 .search-input:focus
 {
     outline: none;
     border: 1px solid #777;
-    display: none;
 }
 
 .search-btn
