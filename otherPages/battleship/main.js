@@ -17,10 +17,11 @@ document.addEventListener('DOMContentLoaded', () =>
     const infoDisplay = document.querySelector('#info');
 
     const userSquares = []
+    const computerSquares = []
 
     const width = 10;
 
-    function createBoard(grid, squares, width)
+    function createBoard(grid, squares)
     {
         for(let i = 0; i < width * width; i++)
         {
@@ -31,5 +32,50 @@ document.addEventListener('DOMContentLoaded', () =>
         }
     }
 
-    createBoard(userGrid, userSquares, width)
+    createBoard(userGrid, userSquares)
+    createBoard(computerGrid, computerSquares)
+
+    const shipArray =
+    [
+        {
+            name: 'destroyer',
+            directions:
+            [
+                [0, 1],
+                [0, width]
+            ]
+        },
+        {
+            name: 'submarine',
+            directions:
+            [
+                [0, 1, 2],
+                [0, width, width * 2]
+            ]
+        },
+        {
+            name: 'cruiser',
+            directions:
+            [
+                [0, 1, 2],
+                [0, width, width * 2]
+            ]
+        },
+        {
+            name: 'battleship',
+            directions:
+            [
+                [0, 1, 2, 3],
+                [0, width, width * 2, width * 3]
+            ]
+        },
+        {
+            name: 'carrier',
+            directions:
+            [
+                [0, 1, 2, 3, 4],
+                [0, width, width * 2, width * 3, width * 4]
+            ]
+        },
+    ]
 })
