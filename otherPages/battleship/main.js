@@ -174,18 +174,20 @@ document.addEventListener('DOMContentLoaded', () =>
 
         selectedShipIndex = parseInt(selectedShipNameWithIndex.substr(-1))
         shipLastId = selectedShipIndex
+        
+        console.log(isHorizontal)
 
-        if(isHorizontal)
-        {
-            for(let i = 0; i < draggedShipLength; i++)
-            {
-                userSquares[parseInt(this.dataset.id) - selectedShipIndex + i].classList.add('taken', shipClass)
-            }
-        } else if(!isHorizontal)
+        if(!isHorizontal)
         {
             for(let i = 0; i < draggedShipLength; i++)
             {
                 userSquares[parseInt(this.dataset.id) - selectedShipIndex + width * i].classList.add('taken', shipClass)
+            }
+        } else if(isHorizontal)
+        {
+            for(let i = 0; i < draggedShipLength; i++)
+            {
+                userSquares[parseInt(this.dataset.id) - selectedShipIndex + i].classList.add('taken', shipClass)
             }
         } else return
 
