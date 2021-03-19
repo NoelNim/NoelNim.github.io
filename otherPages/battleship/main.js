@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => 
 {
+    console.log('hey there, dont cheat. I know you are in the console looking for cheaties!')
+
     const userGrid = document.querySelector('.grid-user');
     const computerGrid = document.querySelector('.grid-computer');
     const displayGrid = document.querySelector('.grid-display');
@@ -124,4 +126,54 @@ document.addEventListener('DOMContentLoaded', () =>
         }
     }
     rotateButton.addEventListener('click', rotate)
+
+    ships.forEach(ship => ship.addEventListener('dragstart', dragStart))
+    userSquares.forEach(square => square.addEventListener('dragstart', dragStart))
+    userSquares.forEach(square => square.addEventListener('dragover', dragOver))
+    userSquares.forEach(square => square.addEventListener('dragenter', dragEnter))
+    userSquares.forEach(square => square.addEventListener('dragleave', dragLeave))
+    userSquares.forEach(square => square.addEventListener('drop', dragDrop))
+    userSquares.forEach(square => square.addEventListener('dragend', dragEnd))
+
+    let selectedShipNameWithIndex
+    let draggedShip
+    let draggedShipLength
+
+    ships.forEach(ship => ship.addEventListener('mousedown', (e) => 
+    {
+        selectedShipNameWithIndex = e.target.id
+    }))
+
+    function dragStart(e)
+    {
+        draggedShip = this
+        draggedShipLength = this.childNodes.length
+    }
+
+    function dragOver(e)
+    {
+        e.preventDefault()
+    }
+
+    function dragEnter(e)
+    {
+        e.preventDefault()
+    }
+
+    function dragLeave()
+    {
+        
+    }
+
+    function dragDrop()
+    {
+        let shipNameWithLastId = draggedShip.lastChild.id
+        let shipClass = shipNameWithLastId.slice(0, -2);
+        console.log(shipClass);
+    }
+
+    function dragEnd ()
+    {
+        
+    }
 })
