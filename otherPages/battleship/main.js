@@ -107,6 +107,21 @@ document.addEventListener('DOMContentLoaded', () =>
         if(isHorizontal)
         {
             destroyer.classList.toggle('destroyer-container-vertical')
+            submarine.classList.toggle('submarine-container-vertical')
+            cruiser.classList.toggle('cruiser-container-vertical')
+            battleship.classList.toggle('battleship-container-vertical')
+            carrier.classList.toggle('carrier-container-vertical')
+            isHorizontal = false
+        }
+        if(!isHorizontal)
+        {
+            destroyer.classList.toggle('destroyer-container')
+            submarine.classList.toggle('submarine-container')
+            cruiser.classList.toggle('cruiser-container')
+            battleship.classList.toggle('battleship-container')
+            carrier.classList.toggle('carrier-container')
+            isHorizontal = true
         }
     }
+    rotateButton.addEventListener('click', rotate)
 })
