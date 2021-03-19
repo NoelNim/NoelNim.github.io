@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () =>
             battleship.classList.toggle('battleship-container-vertical')
             carrier.classList.toggle('carrier-container-vertical')
             isHorizontal = false
-        } else if(!isHorizontal)
+        } else
         {
             destroyer.classList.toggle('destroyer-container')
             submarine.classList.toggle('submarine-container')
@@ -150,8 +150,8 @@ document.addEventListener('DOMContentLoaded', () =>
 
     function dragStart(e)
     {
-        draggedShip = this
-        draggedShipLength = this.childNodes.length
+        draggedShip = this;
+        draggedShipLength = this.childNodes.length;
     }
 
     function dragOver(e)
@@ -183,15 +183,15 @@ document.addEventListener('DOMContentLoaded', () =>
         {
             for(let i = 0; i < draggedShipLength; i++)
             {
-                userSquares[parseInt(this.dataset.id) - selectedShipIndex + i].classList.add('taken', shipClass)
+                userSquares[parseInt(this.dataset.id) + i].classList.add('taken', shipClass)
             }
-        } else if(!isHorizontal)
+        } else 
         {
             for(let i = 0; i < draggedShipLength; i++)
             {
-                userSquares[parseInt(this.dataset.id) - selectedShipIndex + width * i].classList.add('taken', shipClass)
+                userSquares[parseInt(this.dataset.id) + width * i].classList.add('taken', shipClass)
             }
-        } else return
+        } 
 
         displayGrid.removeChild(draggedShip)
     }
