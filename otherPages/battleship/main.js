@@ -25,6 +25,8 @@ document.addEventListener('DOMContentLoaded', () =>
 
     let isHorizontal = true;
 
+    let horizontalInt = 0;
+
     function createBoard(grid, squares)
     {
         for(let i = 0; i < width * width; i++)
@@ -114,8 +116,7 @@ document.addEventListener('DOMContentLoaded', () =>
             battleship.classList.toggle('battleship-container-vertical')
             carrier.classList.toggle('carrier-container-vertical')
             isHorizontal = false
-        }
-        if(!isHorizontal)
+        } else if(!isHorizontal)
         {
             destroyer.classList.toggle('destroyer-container')
             submarine.classList.toggle('submarine-container')
@@ -124,7 +125,10 @@ document.addEventListener('DOMContentLoaded', () =>
             carrier.classList.toggle('carrier-container')
             isHorizontal = true
         }
+
+        console.log(isHorizontal)
     }
+
     rotateButton.addEventListener('click', rotate)
 
     ships.forEach(ship => ship.addEventListener('dragstart', dragStart))
@@ -174,20 +178,18 @@ document.addEventListener('DOMContentLoaded', () =>
 
         selectedShipIndex = parseInt(selectedShipNameWithIndex.substr(-1))
         shipLastId = selectedShipIndex
-        
-        console.log(isHorizontal)
 
-        if(!isHorizontal)
-        {
-            for(let i = 0; i < draggedShipLength; i++)
-            {
-                userSquares[parseInt(this.dataset.id) - selectedShipIndex + width * i].classList.add('taken', shipClass)
-            }
-        } else if(isHorizontal)
+        if(isHorizontal)
         {
             for(let i = 0; i < draggedShipLength; i++)
             {
                 userSquares[parseInt(this.dataset.id) - selectedShipIndex + i].classList.add('taken', shipClass)
+            }
+        } else if(!isHorizontal)
+        {
+            for(let i = 0; i < draggedShipLength; i++)
+            {
+                userSquares[parseInt(this.dataset.id) - selectedShipIndex + width * i].classList.add('taken', shipClass)
             }
         } else return
 
