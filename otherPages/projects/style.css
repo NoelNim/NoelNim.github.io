@@ -482,4 +482,20 @@ body
         border-radius: 50%;
         background-color: #AAA;
     }
+
+    #bottom
+    {
+        position: fixed;
+        bottom: 0;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+#bottom
+{
+    position: fixed;
+    bottom: 0;
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
