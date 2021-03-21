@@ -245,7 +245,8 @@ html, body
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
+    width: 80%;
+    height: 40px;
 }
 
 #inputEncode:focus
@@ -272,7 +273,8 @@ html, body
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
+    width: 80%;
+    height: 40px;
 }
 
 #inputDecode:focus
@@ -299,11 +301,6 @@ html, body
 {
     width: 1fr;
     height: 20px;
-}
-
-#inputDecode
-{
-    height: 25px;
 }
 
 #base64
