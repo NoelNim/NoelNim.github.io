@@ -234,8 +234,9 @@ document.addEventListener('DOMContentLoaded', () =>
         }
         if(currentPlayer === 'computer')
         {
+            let time = Math.floor(Math.random() * 500) + 100
             turnDisplay.innerHTML = 'AIs Go';
-            setTimeout(computerGo, 1000)
+            setTimeout(computerGo, time)
         }
     }
 
@@ -265,9 +266,10 @@ document.addEventListener('DOMContentLoaded', () =>
             {
                 square.classList.add('miss');
             }
+
+            currentPlayer = 'computer';
+            playGame();
         }
-        currentPlayer = 'computer';
-        playGame();
     }
 
     let cpuDestroyerCount = 0;
@@ -281,6 +283,7 @@ document.addEventListener('DOMContentLoaded', () =>
         let random = Math.floor(Math.random() * userSquares.length)
         if(!userSquares[random].classList.contains('boom') && !userSquares[random].classList.contains('miss'))
         {
+            userSquares[random].classList.add('boom')
             if(userSquares[random].classList.contains('destroyer')) cpuDestroyerCount++;
             if(userSquares[random].classList.contains('submarine')) cpuSubmarineCount++;
             if(userSquares[random].classList.contains('cruiser')) cpuCruiserCount++;
@@ -288,5 +291,11 @@ document.addEventListener('DOMContentLoaded', () =>
             if(userSquares[random].classList.contains('carrierCount')) cpuCarrierCount++;
         } else computerGo()
         currentPlayer = 'user';
+        turnDisplay.innerHTML = 'User Go'
+    }
+
+    function checkForWins()
+    {
+
     }
 })
