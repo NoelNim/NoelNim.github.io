@@ -169,6 +169,16 @@
     background-color: #677982;
 }
 
+.white
+{
+    background-color: white;
+}
+
+.cpuShip
+{
+    background-color: transparent;
+}
+
 .boom
 {
     background-color: #39e34d;
@@ -177,9 +187,4 @@
 .miss
 {
     background-color: black;
-}
-
-.white
-{
-    background-color: white;
 }

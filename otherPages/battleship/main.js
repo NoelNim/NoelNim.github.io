@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () =>
         const isTaken = current.some(index => computerSquares[randomStart + index].classList.contains('taken'));
         const isAtRightEdge = current.some(index => (randomStart + index) % width === width - 1);
         const isAtLeftEdge = current.some(index => (randomStart + index) % width === 0);
-        if(!isTaken && !isAtRightEdge && !isAtLeftEdge) current.forEach(index => computerSquares[randomStart + index].classList.add('taken', ship.name))
+        if(!isTaken && !isAtRightEdge && !isAtLeftEdge) current.forEach(index => computerSquares[randomStart + index].classList.add('taken', ship.name, 'cpuShip'))
         else generate(ship)
     }
 
