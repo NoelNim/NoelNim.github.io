@@ -144,29 +144,29 @@
 
 .destroyer
 {
-    background-color: orange;
+    background-color: #677982;
     width: 40px;
     height: 40px;
 }
 
 .submarine
 {
-    background-color: yellow;
+    background-color: #677982;
 }
 
 .cruiser
 {
-    background-color: #39e34d;
+    background-color: #677982;
 }
 
 .battleship
 {
-    background-color: blue;
+    background-color: #677982;
 }
 
 .carrier
 {
-    background-color: purple;
+    background-color: #677982;
 }
 
 .boom
@@ -177,4 +177,9 @@
 .miss
 {
     background-color: black;
+}
+
+.white
+{
+    background-color: white;
 }
