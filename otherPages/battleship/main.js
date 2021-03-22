@@ -234,7 +234,8 @@ document.addEventListener('DOMContentLoaded', () =>
         }
         if(currentPlayer === 'computer')
         {
-            turnDisplay.innerHTML = 'AIs Go'
+            turnDisplay.innerHTML = 'AIs Go';
+            setTimeout(computerGo, 1000)
         }
     }
 
@@ -246,17 +247,46 @@ document.addEventListener('DOMContentLoaded', () =>
     let battleshipCount = 0;
     let carrierCount = 0;
 
-    function revealSquare()
+    function revealSquare(square)
     {
-        if(square.classList.contains('destroyer')) destroyerCount++;
-        if(square.classList.contains('submarine')) submarineCount++;
-        if(square.classList.contains('cruiser')) cruiserCount++;
-        if(square.classList.contains('battleshipCount')) battleshipCount++;
-        if(square.classList.contains('carrierCount')) carrierCount++;
-
-        if(square.classList.contains('taken'))
+        if(!square.classList.contains('boom') && !square.classList.contains('miss'))
         {
-            square.classList.add('boom');
+            console.log('turn sucsess!')
+            if(square.classList.contains('destroyer')) destroyerCount++;
+            if(square.classList.contains('submarine')) submarineCount++;
+            if(square.classList.contains('cruiser')) cruiserCount++;
+            if(square.classList.contains('battleshipCount')) battleshipCount++;
+            if(square.classList.contains('carrierCount')) carrierCount++;
+    
+            if(square.classList.contains('taken'))
+            {
+                square.classList.add('boom');
+            } else
+            {
+                square.classList.add('miss');
+            }
         }
+        currentPlayer = 'computer';
+        playGame();
+    }
+
+    let cpuDestroyerCount = 0;
+    let cpuSubmarineCount = 0;
+    let cpuCruiserCount = 0;
+    let cpuBattleshipCount = 0;
+    let cpuCarrierCount = 0;
+
+    function computerGo()
+    {
+        let random = Math.floor(Math.random() * userSquares.length)
+        if(!userSquares[random].classList.contains('boom') && !userSquares[random].classList.contains('miss'))
+        {
+            if(userSquares[random].classList.contains('destroyer')) cpuDestroyerCount++;
+            if(userSquares[random].classList.contains('submarine')) cpuSubmarineCount++;
+            if(userSquares[random].classList.contains('cruiser')) cpuCruiserCount++;
+            if(userSquares[random].classList.contains('battleshipCount')) cpuBattleshipCount++;
+            if(userSquares[random].classList.contains('carrierCount')) cpuCarrierCount++;
+        } else computerGo()
+        currentPlayer = 'user';
     }
 })
