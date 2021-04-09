@@ -6,6 +6,11 @@
     animation-fill-mode: forwards;
 }
 
+:root
+{
+    font-family: sans-serif;
+}
+
 @keyframes sign 
 {
     to 
@@ -14,10 +19,15 @@
     }
 }
 
+.card-container
+{
+    height: 450px;
+}
+
 .card
 {
     width: 250px;
-    height: 365px;
+    height: 380px;
     border-radius: 20px;
     padding-top: 10px;
     margin-top: 10px;
@@ -30,7 +40,7 @@
 
 .card:hover
 {
-    height: 400px;
+    height: 410px;
 }
 
 body
@@ -120,7 +130,7 @@ body
 
 .fab
 {
-    margin-top: 18px;
+    margin-top: 23px;
 }
 
 .links
@@ -150,4 +160,102 @@ body
     {
         height: 400px;
     }
+}
+
+.skillstitle
+{
+    color: black;
+    font-family: sans-serif;
+    text-shadow: -1px 1px 0px white, 1px -1px 0px white, 1px 1px 0px white, -1px -1px 0px white;
+    text-align: center;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.skill-container-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.skill-card
+{
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
+}
+
+.skill-container .skill-card
+{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.skill-container .skill-card .content 
+{
+    padding: 20px;
+    text-align: center;
+    transition: 0.5s;
+    color: white;
+    transform: translateZ(20px);
+}
+
+.skill-container .skill-card .content h2
+{
+    font-size: 5em;
+    pointer-events: none;
+}
+
+.skill-container .skill-card .content h3
+{
+    font-size: 1.8em;
+    pointer-events: none;
+}
+
+.skill-container .skill-card .content p
+{
+    font-size: 1em;
+    pointer-events: none;
+}
+
+.skill-container .skill-card .content a
+{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 40px;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+.skill-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+html
+{
+    scroll-behavior: smooth
 }
