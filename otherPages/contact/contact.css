@@ -18,12 +18,13 @@
 {
     width: 250px;
     height: 365px;
-    padding-top: 10px;
     border-radius: 20px;
+    padding-top: 10px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
     background: #fafafa;
-    transition: ease-in-out 0.5s;
+    transition: height ease-in-out 0.5s;
     overflow-y: hidden;
 }
 
@@ -34,7 +35,10 @@
 
 body
 {
-    background-color: white;
+    background: url(svg/fjällbacka.svg) no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
 }
 
 .signature-svg
@@ -116,7 +120,23 @@ body
 
 .fab
 {
-    margin-top: 12px;
+    margin-top: 18px;
+}
+
+.links
+{
+    text-align: center;
+}
+
+.fa-github
+{
+    color: black;
+    transition: color 0.35s;
+}
+
+.fa-github:hover
+{
+    color: #f54242;
 }
 
 @media (pointer:none), (pointer:coarse) 
