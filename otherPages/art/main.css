@@ -1,0 +1,66 @@
+:root * {
+  margin: 0;
+  padding: 0;
+}
+:root body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+:root body .header {
+  width: 100%;
+  background: #f1f3f4;
+  height: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+:root body .header .header-title {
+  font-size: 30px;
+}
+:root body .header .header-title-sub {
+  color: #535353;
+}
+@keyframes img-enter-rotate {
+  0% {
+    transform: rotate(-20deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 100;
+  }
+}
+:root body .main-display .img-container {
+  display: flex;
+  flex-direction: column;
+}
+:root body .main-display .img-container img {
+  height: 500px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  zoom: 80%;
+  animation: img-enter-rotate 1s ease;
+}
+:root body .main-display .img-container .Socrates {
+  height: fit-content;
+  zoom: 150%;
+}
+:root body .main-display .img-container .information {
+  width: 100%;
+  text-align: center;
+  flex: 1;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+:root body .main-display .img-container .information .title {
+  font-size: 23px;
+}
+:root body .main-display .img-container .information .date {
+  font-size: small;
+}
+
+/*# sourceMappingURL=main.css.map */

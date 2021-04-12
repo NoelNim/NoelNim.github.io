@@ -1,0 +1,101 @@
+:root 
+{
+    $main-font: sans-serif;
+    $text-main: black;
+    $text-sub: #535353;
+    $default-img-height: 500px;
+
+    *
+    {
+        margin: 0;
+        padding: 0;
+    }
+
+    body
+    {
+        font-family: $main-font;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+
+        .header
+        {
+            width: 100%;
+            background: #f1f3f4;
+            height: 60px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            .header-title
+            {
+                font-size: 30px;
+            }
+
+            .header-title-sub
+            {
+                color: $text-sub;
+            }
+        }
+
+        .main-display
+        {   
+            @keyframes img-enter-rotate 
+            {
+                0%
+                {
+                    transform: rotate(-20deg);
+                    opacity: 0;
+                }
+
+                100%
+                {
+                    transform: rotate(0deg);    
+                    opacity: 100;
+                }
+            }
+
+            .img-container
+            {
+                display: flex;
+                flex-direction: column;
+
+                img
+                {
+                    height: $default-img-height;
+                    width: fit-content;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 30px;
+                    zoom: 80%;
+                    animation: img-enter-rotate 1s ease;
+                }
+
+                .Socrates
+                {
+                    height: fit-content;
+                    zoom: 150%;
+                }
+
+                .information
+                {
+                    width: 100%;
+                    text-align: center;
+                    flex: 1;
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+
+                    .title 
+                    {
+                        font-size: 23px;
+                    }
+
+                    .date 
+                    {
+                        font-size: small;
+                    }
+                }
+            }
+        }
+    }
+}
